@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-color: var(--dark-color);
+    font-family: 'Poppins',sans-serif;
+    color: white;
+
+}
+
+:root{
+    --primary-color:#45a29e;
+    --secondary-color:#66fcf1;
+    --dark-color-2:#002240;
+    --light-color:#c5c6c7;
+    --dark-color:#0b0c10;
+    --error-color:#1f2833;
+}
+.jumbo-normal{
+    font-size: 1rem;
+}
+.jumbo-mid{
+    font-size: 1.5rem;
+}
+.jumbo-l{
+    font-size: 2rem;
+}
+.jumbo-xl{
+    font-size: 2.5rem;
+}
+.jumbo-xxl{
+    font-size: 2.5rem;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+/* Landing */
+.landing{
+    /* background-color: var(--light-color); */
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+.landing h1{
+    background-color: transparent;
+
+}
+.landing a{
+    align-items: flex-end;
+    justify-content: center;
+    border: 2px solid;
+    color: var(--light-color);
+    
+}
+
+/* .landing a:hover{
+background-color: var(--secondary-color);
+} */
+
+.name-span{
+    color: var(--secondary-color);
+}
+.landing a,i{
+    pointer-events: visible;
+    outline: none;
+}
+
+/* .btn:hover{ */
+    /* color:var(--dark-color); */
+    /* background-color:var(--secondary-color);
+    outline: none; */
+/* } */
+.btn{
+    transition:  background-color 1.3s ease-out;
+    position: relative;
+    left:30%
+}
+
+.btn:hover{
+    background-color:var(--secondary-color);    
+    transition-delay:0.1s;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    /* background-color: var(--light-color); */
+    background-color: #ffff00;
+}
+.cover{
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+/* change icon */
+/* .change-icon > .fa + .fa, */
+/* .change-icon:hover > .fa {
+  display: none;
+}
+.change-icon:hover > .fa + .fa {
+  display: inherit;
+} */
+
+

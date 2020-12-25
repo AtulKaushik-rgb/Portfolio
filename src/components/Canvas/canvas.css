@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+  body {
+    background: #0b0c10;
+    min-height: 580px;
+    font-family: 'Poppins',sans-serif;
+    
+  }
+  #experience {
+    perspective: 800px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* position: relative; */
+    
+  }
+  #lines {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30; */
+    pointer-events: none;
+    opacity: .55;
+  }

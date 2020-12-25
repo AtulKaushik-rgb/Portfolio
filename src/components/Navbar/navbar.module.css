@@ -1,0 +1,45 @@
+:root{
+    --primary-color:#45a29e;
+    --secondary-color:#66fcf1;
+    --dark-color-2:#002240;
+    --light-color:#c5c6c7;
+    --dark-color:#0b0c10;
+    --error-color:#1f2833;
+}
+body{
+    background-color: var(--light-color);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    max-width: 90vw;
+    margin: 0 auto;
+    overflow: auto;
+    
+}
+
+.navbarlist{
+    width: 100vw;
+    height: 50px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    display: flex;
+    border-bottom: 3px solid var(--primary-color);
+}
+    
+.navbarlist ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+    ul{
+        list-style: none;
+    }
+    li{
+        margin: 10px;
+        text-decoration: none;
+    }
+
+
