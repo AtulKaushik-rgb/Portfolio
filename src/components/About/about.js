@@ -15,7 +15,7 @@ import Navbar from '../Navbar/navbar'
 export class about extends Component {
     render() {
         return (
-          <>
+          <section id = "about">
             <div className={styles.container}>
               <div className={styles.flex}>
                 <div className={styles.intro}>
@@ -78,7 +78,7 @@ export class about extends Component {
                 </div>
               </div>
             </div>
-          </>
+          </section>
         );
     }
 }
