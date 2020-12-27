@@ -9,10 +9,6 @@ export class canvas extends Component {
       init: function () {
         var line = document.querySelector("#lines");
         var lines = document.getElementById("#lines");
-        console.log(lines);
-        console.log($("#lines"));
-        console.log($("#lines").length);
-        console.log(line);
 
         // SET
         if (true) {
@@ -123,7 +119,7 @@ export class canvas extends Component {
 
         function createDots() {
           var i;
-          console.log("creating dots");
+          
 
           ctx.clearRect(
             0,
@@ -150,7 +146,7 @@ export class canvas extends Component {
         var exp = document.querySelector("#experience");
 
         const mouseHandler = function (e) {
-          console.log("when mousemove or leave");
+          
           if (e.type == "mousemove") {
             mousePosition.x = e.pageX;
             mousePosition.y = e.pageY;
@@ -161,7 +157,7 @@ export class canvas extends Component {
           }
         };
 
-        console.log(exp);
+        
         exp.addEventListener("mousemove", mouseHandler);
         exp.addEventListener("mouseleave", mouseHandler);
 
@@ -174,7 +170,7 @@ export class canvas extends Component {
           clearInterval(this.interval);
         }
         if (experience.resize) {
-          console.log("inside resize");
+          
           document.addEventListener("resize", experience.resize);
         }
       },

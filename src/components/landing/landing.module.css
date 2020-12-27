@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-body{
+/* body{
     background-color: var(--dark-color);
     font-family: 'Poppins',sans-serif;
     color: white;
 
-}
+} */
 
 :root{
     --primary-color:#45a29e;
@@ -15,29 +14,24 @@ body{
     --dark-color:#0b0c10;
     --error-color:#1f2833;
 }
-.jumbo-normal{
+.jumbonormal{
     font-size: 1rem;
 }
-.jumbo-mid{
+.jumbomid{
     font-size: 1.5rem;
 }
-.jumbo-l{
+.jumbol{
     font-size: 2rem;
 }
-.jumbo-xl{
+.jumboxl{
     font-size: 2.5rem;
 }
-.jumbo-xxl{
+.jumboxxl{
     font-size: 2.5rem;
 }
 
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-}
+
 /* Landing */
 .landing{
     /* background-color: var(--light-color); */
@@ -69,12 +63,12 @@ body{
 background-color: var(--secondary-color);
 } */
 
-.name-span{
+.namespan{
     color: var(--secondary-color);
 }
 .landing a,i{
     pointer-events: visible;
-    outline: none;
+    outline: visible;
 }
 
 /* .btn:hover{ */
@@ -85,13 +79,20 @@ background-color: var(--secondary-color);
 .btn{
     transition:  background-color 1.3s ease-out;
     position: relative;
-    left:30%
+    left:30%;
+    padding:5px;
+    border-radius: 5px;
+
 }
 
 .btn:hover{
     background-color:var(--secondary-color);    
     transition-delay:0.1s;
+    text-decoration: none;
+    color: var(--dark-color-2);
+    border-color: var(--secondary-color);
 }
+
 .container{
     display: flex;
     height: 100vh;
@@ -107,13 +108,33 @@ background-color: var(--secondary-color);
     
 }
 
-/* change icon */
-/* .change-icon > .fa + .fa, */
-/* .change-icon:hover > .fa {
-  display: none;
+.changeicon{
+    margin: 5px;
+    animation: infinite-spinning 0.5s ease-out 0s forwards normal;
 }
-.change-icon:hover > .fa + .fa {
-  display: inherit;
+/* i:hover{
+    transform: rotateY(90)
+}
+.btn:hover > .changeicon i {
+  
+  transform:rotate(45)
+  
+} */
+/* .changeicon > i:hover {
+    background-color: pink;
+    animation: infinite-spinning 0.5s ease-out 0s forwards normal;
 } */
 
+/* i:hover {  
+    /* -webkit-animation: infinite-spinning 1s ease-out 0s  normal; */
+    /* animation: infinite-spinning 0.5s ease-out 0s forwards normal; */
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
 
