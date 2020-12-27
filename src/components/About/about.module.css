@@ -1,0 +1,78 @@
+:root{
+    --primary-color:#45a29e;
+    --secondary-color:#66fcf1;
+    --dark-color-2:#002240;
+    --light-color:#c5c6c7;
+    --dark-color:#0b0c10;
+    --error-color:#1f2833;
+}
+.body{
+    background-color: white;
+}
+
+.container{
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: auto;
+    background-color: var(--light-color);
+}
+.icons{
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    overflow-y: hidden;
+    
+}
+.intro{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-wrap: wrap;
+   
+}
+
+.techTitle{
+    grid-column: 1 /span 3;
+    justify-self: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: var(--dark-color);
+    
+}
+.textColor{
+    color: var(--dark-color);
+}
+.techno{
+    height: 450px;
+    width: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    gap: 10px;
+    overflow: hidden;
+    
+    
+}
+.miniicon{
+width: 100%;
+height: 100%;
+}
+
+.techno img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 55px rgb(0,0,0,0.1);
+}

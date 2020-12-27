@@ -1,32 +1,53 @@
-import React from "react";
-import "./landing.css";
+import React,{useState} from "react";
+
+import styles from  "./landing.module.css";
 
 const landing = () => {
+
+  const [hovered,setHovered] = useState(false);
+
+
+  const rotateIcon = (e)=>{
+    console.log(e.currentTarget)
+    
+      setHovered(!hovered)
+    }
+  
+  const resetIcon = (e)=>{
+    if(hovered)
+      setHovered(!hovered)
+
+  }
+
   return (
-    <>
-      <div className="landing">
-        <div className="cover">
-          <h1 className="jumbo-xl heading">
-            Hello, I'm <span className="name-span">Atul Kaushik</span>
+    <div className={styles.main}>
+      <div className={styles.landing}>
+        <div className={styles.cover}>
+          <h1 className={`${styles.jumboxl} ${styles.heading}`}>
+            Hello, I'm <span className={styles.namespan}>Atul Kaushik</span>
           </h1>
          
-          <h1 className="jumbo-l">I'm a full stack web developer</h1>
+          <h1 className={styles.jumbol}>I'm a full stack web developer</h1>
 
           {/* <p className="lead"> */}
             <a
-              className="btn"
+              className={styles.btn}
               href="#nav-section"
               role="button"
+              onMouseEnter={rotateIcon}
+              onMouseOut={resetIcon}
+          
             >
-              View my work <span className="change-icon">
-              {/* <i class="fa fa-arrow-right" aria-hidden="true"></i> */}
-              <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              View my work 
+              <span className={styles.changeicon} >
+              <i className={hovered?'fa fa-arrow-down':'fa fa-arrow-right'} ></i>
+              {/* <i class="fa fa-arrow-down" aria-hidden="true"></i> */}
                 </span>
             </a>
           {/* </p> */}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
