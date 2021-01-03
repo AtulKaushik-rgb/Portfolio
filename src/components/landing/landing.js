@@ -40,7 +40,7 @@ const landing = () => {
             >
               View my work 
               <span className={styles.changeicon} >
-              <i className={hovered?'fa fa-arrow-down':'fa fa-arrow-right'} ></i>
+              <i className={hovered?'fa fa-instagram':'fa fa-arrow-right'} ></i>
               {/* <i class="fa fa-arrow-down" aria-hidden="true"></i> */}
                 </span>
             </a>

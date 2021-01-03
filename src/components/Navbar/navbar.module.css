@@ -66,6 +66,10 @@ body{
     align-items: center;
     
 }
+.hide{
+    position: absolute;
+    top:0
+}
 
 
     ul{

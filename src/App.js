@@ -29,13 +29,17 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <FirstPage />
-        <Navbar />
+      {/* <Navbar />
+        <FirstPage /> */}
+        
         <main>
-          <About />
-          <Project />
-          <Footer />
+          {/* <About />
+          <Project /> */}
+          
         </main>
+        <footer>
+        <Footer />
+        </footer>
       </>
     );
   }

@@ -5,6 +5,44 @@ import styles from "./navbar.module.css";
 
 const navbar = () => {
 
+
+  const href=window.location;
+  const [showNav,setShowNav] = useState(false);
+
+  // $(document).on('scroll', function() {
+  //   if ($(this).scrollTop() >= $('#theTarget').position().top) {
+  //     console.log('I have been reached');
+  //   }
+  // })
+
+  //let elementTarget = document.querySelector('');
+  //let elementTarget = document.getElementById('#about');
+  // let elementTarget = document.querySelector("#nav-section");
+
+  // console.log(elementTarget);
+
+
+  // console.log(document);
+
+  window.addEventListener("scroll", function() {
+    var elementTarget = document.getElementById("about");
+    if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+       // alert("You've scrolled past the second div");
+       console.log('scrolled',window.scrollY)
+       if(!showNav)
+       {
+         console.log(showNav)
+        setShowNav({showNav:true})
+       }
+       
+        
+    }
+  });
+
+  // window.addEventListener('scroll',()=>{
+  //   console.log(window.location)
+  // })
+
   // const [sticky, setSticky] = useState(false);
  
   // let selected = false;
@@ -30,12 +68,16 @@ const navbar = () => {
     //   selected = false;
     // }
   // });
+  let navStyleShow = styles.navbarlist;
+  let navStyleHide = styles.navbarlist + styles.hide;
 
   return (
+
+    
     <>
       <div className = "section-1">
-      {/* <div id="nav-section"  className={` ${sticky ? styles.navbarlist:styles.sticky } `}> */}
-      <div id="nav-section"  className={styles.navbarlist}>
+      {/* <div id="nav-section"  className={` ${sticky ? ${styles.description} ${styles.yellow} } `}> */}
+      <div id="nav-section"  className={`${showNav ?navStyleShow:''}`}>
           <div className={styles.container}>
             <nav className={styles.stickyNav}>
               <ul>
@@ -55,19 +97,6 @@ const navbar = () => {
             </nav>
           </div>
         </div>
-
-{/* Section 1 */}
-
-
-{/* <section className={styles.container}> */}
-
-  {/* <div className={}></div>
-  <div className="progress">
-  <div className="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-</div> */}
-
-{/* </section> */}
-
       </div>
     </>
   );
