@@ -36,9 +36,21 @@ body{
     display: flex;
     border-bottom: 3px solid var(--primary-color);
     z-index: 100;
-    position: sticky;
-    /* position: sticky; */
 }
+
+
+.sticky {
+    width: 100vw;
+    height: 50px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    display: flex;
+    border-bottom: 3px solid var(--primary-color);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
     
 .navbarlist ul{
@@ -53,6 +65,10 @@ body{
     justify-content: flex-start;
     align-items: center;
     
+}
+.hide{
+    position: absolute;
+    top:0
 }
 
 
