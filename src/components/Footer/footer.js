@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../Footer/footer.module.css";
+import resume from '../../../public/assets/resume.svg'
 
 const footer = () => {
   return (
@@ -14,24 +15,19 @@ const footer = () => {
                 <input type="text" placeholder="Name" ></input>
                 <input type="email" placeholder="Email"></input>
                 <textarea className={styles.textarea} name="textarea"  placeholder="Your message"></textarea>
+                <button>Done!</button>
               </div>
             </div>
             <div className={styles.socials}>
-              <div>
-                <span>
-                  <i className="fa fa-arrow-right" aria-hidden="true"></i>
-                </span>
-              </div>
-              <div>
-                <span>
-                  <i className="fa fa-arrow-right" aria-hidden="true"></i>
-                </span>
-              </div>
-              <div>
-                <span>
-                  <i className="fa fa-linkedin" aria-hidden="true"></i>
-                </span>
-              </div>
+              <img src={resume} alt="resume"></img>
+              
+              <a href="/public/assets/resume.svg" download><i class="fa fa-download" aria-hidden="true"></i>Resume</a>
+            </div>
+            <div className={styles.socialFooter}>
+              <div><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+              <div><i class="fa fa-github" aria-hidden="true"></i></div>
+              <div><i class="fa fa-facebook" aria-hidden="true"></i></div>
+              <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
             </div>
           </div>
         </div>
