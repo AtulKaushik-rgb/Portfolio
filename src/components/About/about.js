@@ -11,13 +11,14 @@ import express from '../../../public/assets/express/express-original.svg'
 import mongodb from '../../../public/assets/mongodb/mongodb-original.svg'
 import nodejs from '../../../public/assets/nodejs/nodejs-original.svg'
 import Navbar from '../Navbar/navbar'
+import Skills from '../../components/Skills/skills'
 
 export class about extends Component {
     render() {
         return (
           <section id = "about">
             <div className={styles.container}>
-              <div className={styles.flex}>
+              <div className={styles.grid_container}>
                 <div className={styles.intro}>
                   <img src={devicon} className={styles.icons}></img>
                   <h1 className={styles.textColor}>Who's this guy?</h1>
@@ -30,51 +31,7 @@ export class about extends Component {
 
                 <div className={styles.techno}>
                   <h1 className={styles.techTitle}>Tech Stack</h1>
-                  <img
-                    src={javascript}
-                    className={styles.miniicon}
-                    alt="javascript"
-                  ></img>
-                  <img
-                    src={reacticon}
-                    className={styles.miniicon}
-                    alt="javascript"
-                  ></img>
-                  <img
-                    src={htmlicon}
-                    className={styles.miniicon}
-                    alt="javascript"
-                  ></img>
-                  <img
-                    src={nodejs}
-                    className={styles.miniicon}
-                    alt="javascript"
-                  ></img>
-                  <img
-                    src={mongodb}
-                    className={styles.miniicon}
-                    alt="javascript"
-                  ></img>
-                  <img
-                    src={csharp}
-                    className={styles.miniicon}
-                    alt="javascript"
-                  ></img>
-                  <img
-                    src={express}
-                    className={styles.miniicon}
-                    alt="javascript"
-                  ></img>
-                  <img
-                    src={bootstrap}
-                    className={styles.miniicon}
-                    alt="javascript"
-                  ></img>
-                  <img
-                    src={css3}
-                    className={styles.miniicon}
-                    alt="javascript"
-                  ></img>
+                  <Skills/>
                 </div>
               </div>
             </div>

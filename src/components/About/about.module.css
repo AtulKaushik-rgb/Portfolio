@@ -32,6 +32,11 @@
     overflow-y: hidden;
     
 }
+.grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px
+}
 .intro{
     display: flex;
     width: 50%;
@@ -40,6 +45,7 @@
     align-items: center;
     text-align: center;
     word-wrap: wrap;
+    background-color: lightsalmon;
    
 }
 
@@ -64,6 +70,7 @@
     grid-template-rows:1fr 1fr 1fr 1fr;
     gap: 10px;
     overflow: hidden;
+    background-color: lawngreen;
     
     
 }
