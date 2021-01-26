@@ -26,6 +26,14 @@ class App extends React.Component {
 
   // });
 
+  // <div class="bar flex">
+  //               <div class="bar fill" style="width:90%">
+  //                 <div class="tag bold flex">HTML</div>
+  //               </div>
+  //               <span>90%</span>
+  //             </div>
+
+
   render() {
     return (
       <>
@@ -33,8 +41,8 @@ class App extends React.Component {
         <FirstPage /> */}
         
         <main>
-          {/* <About />
-          <Project /> */}
+          <About />
+          <Project />
           
         </main>
         <footer>

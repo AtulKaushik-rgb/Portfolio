@@ -1,16 +1,13 @@
-
 .footer{
     width: 100vw;
     height:100vh;
-    
-    /* background:url('../../../public/assets/Svg/wave.svg') no-repeat left bottom ; */
 }
 .container{
     width: 90vw;
-    height: 100vh;
+    height: 80vh;
     margin: 0 auto;
     overflow: auto;
-    
+    z-index: 0;
 }
 .connect h1,h5{
     color: var(--dark-color-2);
@@ -18,22 +15,26 @@
 .contact_name{
     margin-bottom: 5px;
     border-bottom: 3px solid var(--dark-color);
+    
 }
+
 .grid_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-row: 1 /span 2;
-    
     width: 100%;
     height: 100%;
     background-color:transparent;
+    margin-top:10vh;
+    height :60vh;
     overflow:hidden;
+    
 }
 .socialFooter{
     background-color: none;
     width: 100%;
-    height: 100%;
+    height: 20vh;
     overflow: hidden;
     grid-column: 1 /span 2;
     display: flex;
@@ -41,28 +42,41 @@
     justify-content: center;
     align-items: center;
     background-color:var(--dark-color);
+    position: relative;
 }
 .socialFooter div{
     height: 50px;
     width: 50px;
     margin: 10px;
-    background-color:var(--light-color);
+    background-color:transparent;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+    z-index: 0;
 }
+.socialFooter div i:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
 .socialFooter::before{
-    content: '';
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    position: relative;
-    top: 0;
-    left: 0;
-
-
+    
+    content: "\f102";
+    font: bold  48px/1 FontAwesome;
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    right: 50%;
+    z-index: 100;
+    color: var(--dark-color);
+    text-align: center;
+    text-decoration: bold;
+    margin-left: -25px;
+    overflow:visible
     
 }
 
@@ -88,6 +102,7 @@
     height: 100%;
     width: 100%;
     font-size: 18px;
+    position: relative;
 }
 .connect input{
     background-color: transparent;
@@ -102,7 +117,7 @@
     font-weight: bold;
     padding:10px
 }
-.connect input::placeholder,textarea::placeholder{
+.connect input,textarea{
     padding-left:10px
 }
 .connect textarea{
@@ -124,42 +139,64 @@
     width: 60%;
 }
 .connect .contact_name{
+    margin-top: 30px;
     margin-bottom: 30px;
+
+}
+.connect button{
+    position: absolute;
+    top :90%;
+    right:3%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .socials{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: none;
-    height: 70vh;
+    height: 100%;
     width: 50vw;
+    
 }
 
 .socials img{
     width: 60%;
-    height: 55%;
+    height: 100%;
+    
 }
 .socials a{
-    width: 10vw;
-    height: 5vh;
+
+    font-weight: bold;
+    text-align: center;
     border: none;
     background-color: var(--dark-color);
     color: var(--light-color);
-    border-radius: 3vh;
+    border-radius: 2vh;
     text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    
+    height: 100%;
+    width: auto;
+    font-size: 24px;
+    padding: 0px 10px;
+    
 }
 
-.socials i,span{
-    padding:0 10px;
+.socials a i{
+    padding-right :10px;
 }
+
+.socials a:hover{
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+
 
 .form button{
     width: 10vw;
@@ -175,4 +212,6 @@
     justify-content: center;
     margin-top: 20px;
 }
+
+
 
