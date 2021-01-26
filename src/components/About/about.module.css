@@ -33,9 +33,11 @@
     
 }
 .grid_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:20px
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
 }
 .intro{
     display: flex;
@@ -63,15 +65,14 @@
     color: var(--dark-color);
 }
 .techno{
-    height: 450px;
-    width: 450px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr 1fr;
-    gap: 10px;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     background-color: lawngreen;
-    
     
 }
 .miniicon{
@@ -82,4 +83,21 @@ height: 100%;
 .techno img:hover{
     transform: scale(1.1);
     box-shadow: 0 10px 55px rgb(0,0,0,0.1);
+}
+
+.bar_flex{
+    width: 100%;
+    margin: 10px;
+    height: 5vh;
+    background-color: var(--light-color);
+}
+.bar_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.tag_bold_flex{
+    background-color: var(--primary-color);
+    
 }

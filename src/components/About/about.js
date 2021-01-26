@@ -16,7 +16,7 @@ import Skills from '../../components/Skills/skills'
 export class about extends Component {
     render() {
         return (
-          <section id = "about">
+          <section id="about">
             <div className={styles.container}>
               <div className={styles.grid_container}>
                 <div className={styles.intro}>
@@ -24,14 +24,45 @@ export class about extends Component {
                   <h1 className={styles.textColor}>Who's this guy?</h1>
                   <h6 className={styles.textColor}>
                     I'm a Full Stack Developer I have serious passion for
-                    Javascript, React and MERN Stack. 
-                    <a href='#'>Let's  work together.</a>
+                    Javascript, React and MERN Stack.
+                    <a href="#">Let's work together.</a>
                   </h6>
                 </div>
 
                 <div className={styles.techno}>
-                  <h1 className={styles.techTitle}>Tech Stack</h1>
-                  <Skills/>
+                  
+                  
+                    <div className={styles.bar_flex}>
+                      <div className={styles.bar_fill}>
+                        <div className={styles.tag_bold_flex}>CSS</div>
+                      </div>
+                      <span>90%</span>
+                    </div>
+                    <div className={styles.bar_flex}>
+                      <div className={styles.bar_fill}>
+                        <div className={styles.tag_bold_flex}>CSS</div>
+                      </div>
+                      <span>90%</span>
+                    </div>
+                    <div className={styles.bar_flex}>
+                      <div className={styles.bar_fill}>
+                        <div className={styles.tag_bold_flex}>CSS</div>
+                      </div>
+                      <span>90%</span>
+                    </div>
+                    <div className={styles.bar_flex}>
+                      <div className={styles.bar_fill}>
+                        <div className={styles.tag_bold_flex}>CSS</div>
+                      </div>
+                      <span>90%</span>
+                    </div>
+                    <div className={styles.bar_flex}>
+                      <div className={styles.bar_fill}>
+                        <div className={styles.tag_bold_flex}>CSS</div>
+                      </div>
+                      <span>90%</span>
+                    </div>
+                  
                 </div>
               </div>
             </div>

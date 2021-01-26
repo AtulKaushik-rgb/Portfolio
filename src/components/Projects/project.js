@@ -1,21 +1,45 @@
 import React from "react";
-import styles from '../Projects/project.module.css'
+import styles from "../Projects/project.module.css";
+
+import devicon from "../../../public/assets/developer.svg";
 
 const project = () => {
   return (
     <section id="project" className={styles.project}>
-      <h1>Projects</h1>
-      <div className="container">
-        <div>
-        <nav class="nav nav-tabs nav-stacked">
-          <a class="nav-link active" href="#">Active link</a>
-          <a class="nav-link" href="#">Link</a>
-          <a class="nav-link " href="#">Disabled link</a>
-        </nav>
+      <div className={styles.container}>
+        <div className={styles.flex_row}>
+          <div className={styles.filter} data-filter="all">
+            ALL
+          </div>
+          <div className={styles.filter} data-filter=".rails">
+            FRONT-END
+          </div>
+          <div className={styles.filter} data-filter=".react">
+            BACKEND
+          </div>
         </div>
-        <div className={styles.All}>All</div>
-        <div className={styles.Front}>FrontEnd</div>
-        <div className={styles.Backend}>Backend</div>
+        <div className={styles.filter_container}>
+          <div className={styles.All}>
+            <div className={styles.allGrid}>
+              <img src={devicon} alt="projText"></img>
+              <img src={devicon} alt="projText"></img>
+              <img src={devicon} alt="projText"></img>
+              <img src={devicon} alt="projText"></img>
+            </div>
+          </div>
+          <div className={styles.Front}>
+            <div className={styles.otherfilters}>
+              <img src={devicon} alt="projText"></img>
+              <img src={devicon} alt="projText"></img>
+            </div>
+          </div>
+          <div className={styles.Back}>
+            <div className={styles.otherfilters}>
+              <img src={devicon} alt="projText"></img>
+              <img src={devicon} alt="projText"></img>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
